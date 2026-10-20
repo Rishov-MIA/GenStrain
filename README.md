@@ -1,4 +1,4 @@
-# GenStrain video diffusion
+# GenStrain
 
 This repo trains and runs inference for a 3D video diffusion model that generates displacement-field videos from conditioning videos. Two conditioning setups are available:
 
@@ -17,12 +17,6 @@ conda activate video-diffusion-env
 
 mamba install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia -y
 pip install -r requirements.txt
-```
-
-Optional MKL downgrade (only if you hit the PyTorch MKL issue):
-
-```bash
-mamba install mkl=2024.0.0 mkl-devel=2024.0.0 mkl-include=2024.0.0 -c conda-forge
 ```
 
 ## Data layout
