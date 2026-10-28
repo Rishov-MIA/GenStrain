@@ -19,6 +19,8 @@ torchrun --standalone --nproc_per_node=4 train_group_dro_ddp.py --config configs
 | `train_full_region_augmented.json` | `train_full_region_augmented.py` | full-region noise, contour condition, augmented data (`--aug N` selects `aug_Nx`) |
 | `train_full_region_ddp.json` | `train_full_region_ddp.py` | full-region noise, contour condition, multi-GPU |
 | `train_full_region_augmented_ddp.json` | `train_full_region_augmented_ddp.py` | full-region noise, contour condition, augmented data (`--aug N`), multi-GPU |
+| `train_contour_only_tan_disp_ddp.json` | `train_full_region_ddp.py` | full-region noise (500 timesteps), contour condition, tangential-decomposed displacement + binary mask, multi-GPU |
+| `train_intensity_mask_tan_disp_ddp.json` | `train_full_region_ddp.py` | as above, but conditioned on the non-binary (intensity) mask, multi-GPU |
 | `train_both_contour_motion.json` | `train_both_contour_motion.py` | contour-region noise, contour + motion conditions |
 | `train_both_contour_motion_full_region.json` | `train_both_contour_motion_full_region.py` | full-region noise, contour + motion conditions |
 | `train_both_contour_motion_full_region_ddp.json` | `train_both_contour_motion_full_region_ddp.py` | full-region noise, contour + motion conditions, multi-GPU |
